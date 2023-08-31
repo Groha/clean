@@ -158,10 +158,10 @@ export default {
     <div class="border border-solid border-gray-300">
       <h1 class="p-5 text-4xl font-bold">График уборки</h1>
       <div class="grid md:grid-cols-5">
-        <input class="border border-gray-300 p-3 m-2 outline-none w-full md:w-auto" type="date" placeholder="Дата..." v-model="currentDate">
-        <input class="border border-gray-300 p-3 m-2 outline-none w-full md:w-auto" type="number" min="1" max="30" placeholder="№ к-ты..." v-model="currentRoom" />
-        <input class="border border-gray-300 p-3 m-2 outline-none w-full md:w-auto" type="number" min="1" max="3" placeholder="Этаж..." v-model="currentFloor" />
-        <input class="border border-gray-300 p-3 m-2 outline-none w-full md:w-auto" type="text" placeholder="Имя..." v-model="currentName" />
+        <input class="border border-gray-300 p-3 m-2 outline-none w-[calc(100%-1rem)] md:w-auto" type="date" placeholder="Дата..." v-model="currentDate">
+        <input class="border border-gray-300 p-3 m-2 outline-none w-[calc(100%-1rem)] md:w-auto" type="number" min="1" max="30" placeholder="№ к-ты..." v-model="currentRoom" />
+        <input class="border border-gray-300 p-3 m-2 outline-none w-[calc(100%-1rem)] md:w-auto" type="number" min="1" max="3" placeholder="Этаж..." v-model="currentFloor" />
+        <input class="border border-gray-300 p-3 m-2 outline-none w-[calc(100%-1rem)] md:w-auto" type="text" placeholder="Имя..." v-model="currentName" />
         <button @click="addRoom()" class="p-3 border border-gray-300 rounded-sm cursor-pointer bg-white transition-all duration-300 m-2 hover:bg-gray-300">Добавить комнату</button>
       </div>
     </div>
@@ -192,10 +192,10 @@ export default {
             </p>
             <div v-if="showModal" class="w-full h-full fixed inset-0 bg-slate-600">
               <div class="grid bg-white w-full md:w-[40%] mx-auto top-[50%] translate-y-[-50%] relative p-5 pt-10">
-                <input class="border border-gray-300 p-3 m-2 outline-none w-full md:w-auto" type="date" placeholder="Дата..." v-model="modalDate">
-                <input class="border border-gray-300 p-3 m-2 outline-none w-full md:w-auto" type="number" min="1" max="30" placeholder="№ к-ты..." v-model="modalRoom" />
-                <input class="border border-gray-300 p-3 m-2 outline-none w-full md:w-auto" type="number" min="1" max="3" placeholder="Этаж..." v-model="modalFloor" />
-                <input class="border border-gray-300 p-3 m-2 outline-none w-full md:w-auto" type="text" placeholder="Имя..." v-model="modalName" />
+                <input class="border border-gray-300 p-3 m-2 outline-none w-[calc(100%-1rem)] md:w-auto" type="date" placeholder="Дата..." v-model="modalDate">
+                <input class="border border-gray-300 p-3 m-2 outline-none w-[calc(100%-1rem)] md:w-auto" type="number" min="1" max="30" placeholder="№ к-ты..." v-model="modalRoom" />
+                <input class="border border-gray-300 p-3 m-2 outline-none w-[calc(100%-1rem)] md:w-auto" type="number" min="1" max="3" placeholder="Этаж..." v-model="modalFloor" />
+                <input class="border border-gray-300 p-3 m-2 outline-none w-[calc(100%-1rem)] md:w-auto" type="text" placeholder="Имя..." v-model="modalName" />
                 <button @click="updateRoom()" class="p-3 border border-gray-300 rounded-sm cursor-pointer bg-white transition-all duration-300 m-2 hover:bg-gray-300">Сохранить данные</button>
                 <span @click="showModal = false" class="absolute top-[10px] right-[14px] font-bold cursor-pointer">x</span>
               </div>
